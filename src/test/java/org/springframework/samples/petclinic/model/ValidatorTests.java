@@ -28,10 +28,6 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * @author Michael Isvy Simple test to make sure that Bean Validation is working (useful
- * when upgrading to a new version of Hibernate Validator/ Bean Validation)
- */
 class ValidatorTests {
 
 	private Validator createValidator() {
@@ -45,7 +41,7 @@ class ValidatorTests {
 
 		LocaleContextHolder.setLocale(Locale.ENGLISH);
 		Person person = new Person();
-		person.setFirstName("empty");
+		person.setFirstName("emptty");
 		person.setLastName("smith");
 
 		Validator validator = createValidator();
